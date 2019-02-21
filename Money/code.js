@@ -8,5 +8,9 @@ function convert(){
         result.value = insert/23000;
     }else if(from.value === 'usd' && to.value === 'vn'){
         result.value = insert*23000;
+    }else if(from.value === 'vn' && to.value === 'vn'){
+        result.value = insert*1;
+    }else if(from.value === 'usd' && to.value === 'usd'){
+        result.value = insert*1;
     }
 }
