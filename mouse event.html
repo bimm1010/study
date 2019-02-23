@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img id="img" src="1.png"/>
+    <p> click button below to move image right </p>
+    <input type="button" value="tap me" onclick="moveRight();"/>
+</form>
+<script>
+    var img00 = null;
+    img00 = document.getElementById('img');
+
+    function init() {
+        img00 = document.getElementById("img");
+        img00.style.position = 'relative';
+        img00.style.left = '0px';
+    }
+
+    function moveRight() {
+        img00.style.left = parseInt(img00.style.left) + 10 + 'px';
+
+    }
+
+    window.onload = init;
+
+</script>
+</body>
+</html>
